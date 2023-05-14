@@ -33,7 +33,7 @@ class Api extends CI_Controller {
         } else {
             $data['users'] = $this->M_Api->getAllData('users');
         }
-        header("Access-Control-Allow-Origin: ");
+        header("Access-Control-Allow-Origin: *");
         header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
         header('Access-Control-Allow-Headers:');
         if(!$data){

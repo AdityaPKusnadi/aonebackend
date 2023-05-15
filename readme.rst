@@ -1,71 +1,32 @@
-###################
-What is CodeIgniter
-###################
+==================================================
+Aoneproject Backend (CodeIgniter 3)
+This is the backend of the Aoneproject, a web application built using CodeIgniter 3. The backend serves as the API for the frontend to access the data stored in the database.
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Preview
+You can preview the backend at the following URL:
 
-*******************
-Release Information
-*******************
+https://apk-project.my.id/aonebackend/users
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Code
+The source code for the backend can be found at the following GitHub repository:
 
-**************************
-Changelog and New Features
-**************************
+https://github.com/AdityaPKusnadi/aonebackend
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+API
+The API provides the following endpoints:
 
-*******************
-Server Requirements
-*******************
+/users: Returns the global data for all users.
+/users/{id}: Returns the detailed information for the user with the specified id.
+Database
+The backend uses the following database:
 
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+Database name: aone_test
+Table name: users
+Columns:
+id (INT auto_increment)
+first_name (varchar(16))
+last_name (varchar(16))
+email (varchar(30))
+avatar (text)
+CSS Framework
+The backend does not use any CSS framework, as it only serves as an API for the frontend.
